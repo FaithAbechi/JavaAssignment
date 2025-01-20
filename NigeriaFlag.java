@@ -1,17 +1,14 @@
-//Question Two 
-public class NigeriaFlag {
+public class NigerianFlag {
     public static void main(String[] args) {
-        int height = 9; 
-        int width = 27; 
+        int rows = 6; 
+        int columns = 18;
 
-        for (int i = 0; i < height; i++) { 
-            for (int j = 0; j < width; j++) { 
-                if (j < width / 3 || j >= 2 * width / 3) {
-                    
-                    System.out.print("G");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                if (j < columns / 3 || j >= 2 * columns / 3) {
+                    System.out.print("*");
                 } else {
-                    
-                    System.out.print("W");
+                    System.out.print("=");
                 }
             }
             System.out.println();
